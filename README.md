@@ -2,6 +2,20 @@
 
 AgroLink is a feature-rich React + Tailwind CSS frontend application with full CRUD functionality using Axios and JSON-Server. It allows farmers to list, update, and manage agricultural products while providing buyers with advanced search, filtering, and discovery features through a responsive, modern UI.
 
+## 📸 Screenshots
+
+### Home Page
+![Home Page](https://github.com/user-attachments/assets/home-page-screenshot.png)
+*Landing page with platform overview and features*
+
+### All Products - Advanced Search & Filter
+![All Products](https://github.com/user-attachments/assets/all-products-screenshot.png)
+*Product listing with search bar, filters (category, location, price range), sorting, pagination, and grid/list view toggle*
+
+### Favorites Page
+![Favorites](https://github.com/user-attachments/assets/favorites-screenshot.png)
+*Saved favorite products with persistent storage*
+
 ## 🚀 Features
 
 ### Core Features
