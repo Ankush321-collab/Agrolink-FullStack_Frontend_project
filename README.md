@@ -5,15 +5,15 @@ AgroLink is a feature-rich React + Tailwind CSS frontend application with full C
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](https://github.com/user-attachments/assets/home-page-screenshot.png)
+![Home Page] ![alt text](image-2.png)
 *Landing page with platform overview and features*
 
 ### All Products - Advanced Search & Filter
-![All Products](https://github.com/user-attachments/assets/all-products-screenshot.png)
+![All Products] ![alt text](image-1.png)
 *Product listing with search bar, filters (category, location, price range), sorting, pagination, and grid/list view toggle*
 
 ### Favorites Page
-![Favorites](https://github.com/user-attachments/assets/favorites-screenshot.png)
+![Favorites] ![alt text](image.png)
 *Saved favorite products with persistent storage*
 
 ## 🚀 Features
