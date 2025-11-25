@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Wheat",
+      "price": 1200,
+      "quantity": "50 kg",
+      "location": "Nashik",
+      "image": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=500",
+      "description": "Freshly harvested wheat from organic farms. High quality grains suitable for flour production."
+    },
+    {
+      "id": "2",
+      "name": "Rice",
+      "price": 1500,
+      "quantity": "100 kg",
+      "location": "Pune",
+      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500",
+      "description": "Premium basmati rice with excellent aroma and taste. Ideal for daily consumption."
+    },
+    {
+      "id": "3",
+      "name": "Tomatoes",
+      "price": 40,
+      "quantity": "25 kg",
+      "location": "Mumbai",
+      "image": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=500",
+      "description": "Fresh red tomatoes harvested this morning. Perfect for cooking and salads."
+    },
+    {
+      "id": "4",
+      "name": "Onions",
+      "price": 30,
+      "quantity": "30 kg",
+      "location": "Nashik",
+      "image": "https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?w=500",
+      "description": "Fresh onions from Nashik farms. Known for quality and taste."
+    },
+    {
+      "id": "5",
+      "name": "Potatoes",
+      "price": 25,
+      "quantity": "40 kg",
+      "location": "Satara",
+      "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500",
+      "description": "Farm fresh potatoes. Great for various dishes and long shelf life."
+    }
+  ]
+}

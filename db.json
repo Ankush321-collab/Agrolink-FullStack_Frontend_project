@@ -1,0 +1,227 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Wheat",
+      "price": 1200,
+      "quantity": "50 kg",
+      "location": "Nashik",
+      "category": "Grains",
+      "farmerId": "1",
+      "image": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=500",
+      "description": "Freshly harvested wheat from organic farms. High quality grains suitable for flour production.",
+      "rating": 4.5,
+      "inStock": true,
+      "organic": true
+    },
+    {
+      "id": "2",
+      "name": "Rice",
+      "price": 1500,
+      "quantity": "100 kg",
+      "location": "Pune",
+      "category": "Grains",
+      "farmerId": "2",
+      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500",
+      "description": "Premium basmati rice with excellent aroma and taste. Ideal for daily consumption.",
+      "rating": 5,
+      "inStock": true,
+      "organic": true
+    },
+    {
+      "id": "3",
+      "name": "Tomatoes",
+      "price": 40,
+      "quantity": "25 kg",
+      "location": "Mumbai",
+      "category": "Vegetables",
+      "farmerId": "3",
+      "image": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=500",
+      "description": "Fresh red tomatoes harvested this morning. Perfect for cooking and salads.",
+      "rating": 4,
+      "inStock": true,
+      "organic": false
+    },
+    {
+      "id": "4",
+      "name": "Onions",
+      "price": 30,
+      "quantity": "30 kg",
+      "location": "Nashik",
+      "category": "Vegetables",
+      "farmerId": "1",
+      "image": "https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?w=500",
+      "description": "Fresh onions from Nashik farms. Known for quality and taste.",
+      "rating": 4.2,
+      "inStock": true,
+      "organic": false
+    },
+    {
+      "id": "5",
+      "name": "Potatoes",
+      "price": 25,
+      "quantity": "40 kg",
+      "location": "Satara",
+      "category": "Vegetables",
+      "farmerId": "2",
+      "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500",
+      "description": "Farm fresh potatoes. Great for various dishes and long shelf life.",
+      "rating": 4.3,
+      "inStock": true,
+      "organic": false
+    },
+    {
+      "id": "6",
+      "name": "Apples",
+      "price": 100,
+      "quantity": "20 kg",
+      "location": "Amravati",
+      "category": "Fruits",
+      "farmerId": "3",
+      "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=500",
+      "description": "An apple a day keeps the doctor away. Fresh and crisp apples.",
+      "rating": 4.7,
+      "inStock": true,
+      "organic": true
+    },
+    {
+      "id": "7",
+      "name": "Mangoes",
+      "price": 150,
+      "quantity": "15 kg",
+      "location": "Ratnagiri",
+      "category": "Fruits",
+      "farmerId": "4",
+      "image": "https://images.unsplash.com/photo-1605027990121-cbae9959381b?w=500",
+      "description": "Sweet Alphonso mangoes from Ratnagiri. The king of fruits!",
+      "rating": 5,
+      "inStock": true,
+      "organic": true
+    },
+    {
+      "id": "8",
+      "name": "Milk",
+      "price": 60,
+      "quantity": "10 L",
+      "location": "Kolhapur",
+      "category": "Dairy",
+      "farmerId": "5",
+      "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=500",
+      "description": "Fresh cow milk delivered daily. Rich in nutrients.",
+      "rating": 4.8,
+      "inStock": true,
+      "organic": true
+    },
+    {
+      "id": "9",
+      "name": "Carrots",
+      "price": 35,
+      "quantity": "20 kg",
+      "location": "Pune",
+      "category": "Vegetables",
+      "farmerId": "2",
+      "image": "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=500",
+      "description": "Fresh orange carrots. Perfect for salads and juices.",
+      "rating": 4.1,
+      "inStock": true,
+      "organic": false
+    },
+    {
+      "id": "10",
+      "name": "Spinach",
+      "price": 20,
+      "quantity": "10 kg",
+      "location": "Mumbai",
+      "category": "Vegetables",
+      "farmerId": "3",
+      "image": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=500",
+      "description": "Fresh green spinach packed with iron and vitamins.",
+      "rating": 4.4,
+      "inStock": false,
+      "organic": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Grains",
+      "icon": "🌾",
+      "description": "Wheat, Rice, and other grains"
+    },
+    {
+      "id": "2",
+      "name": "Vegetables",
+      "icon": "🥬",
+      "description": "Fresh vegetables from local farms"
+    },
+    {
+      "id": "3",
+      "name": "Fruits",
+      "icon": "🍎",
+      "description": "Seasonal and fresh fruits"
+    },
+    {
+      "id": "4",
+      "name": "Dairy",
+      "icon": "🥛",
+      "description": "Milk and dairy products"
+    }
+  ],
+  "farmers": [
+    {
+      "id": "1",
+      "name": "Ramesh Patil",
+      "location": "Nashik",
+      "phone": "+91 9876543210",
+      "email": "ramesh.patil@example.com",
+      "farmSize": "10 acres",
+      "certified": true,
+      "specialization": "Organic Farming",
+      "avatar": "https://ui-avatars.com/api/?name=Ramesh+Patil&background=22c55e&color=fff"
+    },
+    {
+      "id": "2",
+      "name": "Sunita Deshmukh",
+      "location": "Pune",
+      "phone": "+91 9876543211",
+      "email": "sunita.d@example.com",
+      "farmSize": "15 acres",
+      "certified": true,
+      "specialization": "Grain Production",
+      "avatar": "https://ui-avatars.com/api/?name=Sunita+Deshmukh&background=22c55e&color=fff"
+    },
+    {
+      "id": "3",
+      "name": "Vijay Sharma",
+      "location": "Mumbai",
+      "phone": "+91 9876543212",
+      "email": "vijay.sharma@example.com",
+      "farmSize": "8 acres",
+      "certified": false,
+      "specialization": "Vegetable Farming",
+      "avatar": "https://ui-avatars.com/api/?name=Vijay+Sharma&background=22c55e&color=fff"
+    },
+    {
+      "id": "4",
+      "name": "Priya Kulkarni",
+      "location": "Ratnagiri",
+      "phone": "+91 9876543213",
+      "email": "priya.k@example.com",
+      "farmSize": "12 acres",
+      "certified": true,
+      "specialization": "Mango Orchards",
+      "avatar": "https://ui-avatars.com/api/?name=Priya+Kulkarni&background=22c55e&color=fff"
+    },
+    {
+      "id": "5",
+      "name": "Anil Yadav",
+      "location": "Kolhapur",
+      "phone": "+91 9876543214",
+      "email": "anil.yadav@example.com",
+      "farmSize": "20 acres",
+      "certified": true,
+      "specialization": "Dairy Farming",
+      "avatar": "https://ui-avatars.com/api/?name=Anil+Yadav&background=22c55e&color=fff"
+    }
+  ]
+}
