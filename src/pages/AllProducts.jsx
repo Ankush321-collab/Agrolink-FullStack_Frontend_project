@@ -115,20 +115,22 @@ const AllProducts = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <FaSpinner className="animate-spin text-green-600 text-5xl" />
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+        <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+          <FaSpinner className="animate-spin text-green-600 dark:text-green-500 text-5xl" />
+        </div>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <p className="text-red-600 text-xl mb-4">{error}</p>
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+        <div className="text-center bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+          <p className="text-red-600 dark:text-red-400 text-xl mb-4">{error}</p>
           <button 
             onClick={fetchData}
-            className="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700"
+            className="bg-green-600 dark:bg-green-700 text-white px-6 py-2 rounded-xl hover:bg-green-700 dark:hover:bg-green-600 hover:scale-105 transition-all duration-300"
           >
             Retry
           </button>
@@ -138,9 +140,9 @@ const AllProducts = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
-      <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center">All Products</h1>
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-8 transition-colors duration-300">
+      <div className="container mx-auto px-4 animate-fade-in">
+        <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-8 text-center transition-colors duration-300">All Products</h1>
         
         {/* Search Bar */}
         <div className="mb-6">
@@ -154,38 +156,48 @@ const AllProducts = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           {/* Filter Panel */}
           <div className="lg:col-span-1">
-            <FilterPanel
-              categories={categories}
-              selectedCategory={selectedCategory}
-              onCategoryChange={setSelectedCategory}
-              priceRange={priceRange}
-              onPriceChange={setPriceRange}
-              locations={locations}
-              selectedLocation={selectedLocation}
-              onLocationChange={setSelectedLocation}
-              sortBy={sortBy}
-              onSortChange={setSortBy}
-              onReset={resetFilters}
-            />
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700 transition-all duration-300">
+              <FilterPanel
+                categories={categories}
+                selectedCategory={selectedCategory}
+                onCategoryChange={setSelectedCategory}
+                priceRange={priceRange}
+                onPriceChange={setPriceRange}
+                locations={locations}
+                selectedLocation={selectedLocation}
+                onLocationChange={setSelectedLocation}
+                sortBy={sortBy}
+                onSortChange={setSortBy}
+                onReset={resetFilters}
+              />
+            </div>
           </div>
 
           {/* Products Grid */}
           <div className="lg:col-span-3">
             {/* Results Header */}
-            <div className="flex items-center justify-between mb-6">
-              <p className="text-gray-600">
+            <div className="flex items-center justify-between mb-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 transition-all duration-300">
+              <p className="text-gray-600 dark:text-gray-300 transition-colors duration-300">
                 Showing {indexOfFirstItem + 1}-{Math.min(indexOfLastItem, filteredProducts.length)} of {filteredProducts.length} products
               </p>
               <div className="flex space-x-2">
                 <button
                   onClick={() => setViewMode('grid')}
-                  className={`p-2 rounded ${viewMode === 'grid' ? 'bg-green-600 text-white' : 'bg-gray-200'}`}
+                  className={`p-2 rounded-xl transition-all duration-300 hover:scale-105 ${
+                    viewMode === 'grid' 
+                      ? 'bg-green-600 dark:bg-green-700 text-white shadow-md' 
+                      : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                  }`}
                 >
                   <FaTh />
                 </button>
                 <button
                   onClick={() => setViewMode('list')}
-                  className={`p-2 rounded ${viewMode === 'list' ? 'bg-green-600 text-white' : 'bg-gray-200'}`}
+                  className={`p-2 rounded-xl transition-all duration-300 hover:scale-105 ${
+                    viewMode === 'list' 
+                      ? 'bg-green-600 dark:bg-green-700 text-white shadow-md' 
+                      : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                  }`}
                 >
                   <FaList />
                 </button>
@@ -193,15 +205,16 @@ const AllProducts = () => {
             </div>
 
             {currentItems.length === 0 ? (
-              <div className="text-center text-gray-600 text-xl py-12">
+              <div className="text-center text-gray-600 dark:text-gray-300 text-xl py-12 bg-white dark:bg-gray-800 rounded-xl shadow-md transition-all duration-300">
                 No products found matching your criteria.
               </div>
             ) : (
               <>
-                <div className={viewMode === 'grid' 
-                  ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'
-                  : 'space-y-4'
-                }>
+                <div className={`animate-slide-up transition-all duration-300 ${
+                  viewMode === 'grid' 
+                    ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'
+                    : 'space-y-4'
+                }`}>
                   {currentItems.map(product => (
                     <ProductCard key={product.id} product={product} />
                   ))}

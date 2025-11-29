@@ -49,23 +49,23 @@ const Favorites = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-8 transition-all duration-300">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center mb-8">
-          <FaHeart className="text-red-500 text-4xl mr-3" />
-          <h1 className="text-4xl font-bold text-gray-800">My Favorites</h1>
+          <FaHeart className="text-red-500 text-4xl mr-3 transition-all duration-300" />
+          <h1 className="text-4xl font-bold text-gray-800 dark:text-white transition-colors duration-300">My Favorites</h1>
         </div>
 
         {products.length === 0 ? (
-          <div className="text-center py-16">
-            <FaHeart className="text-gray-300 text-6xl mx-auto mb-4" />
-            <p className="text-gray-600 text-xl mb-4">No favorites yet!</p>
-            <p className="text-gray-500 mb-6">
+          <div className="text-center py-16 bg-white dark:bg-gray-800 rounded-2xl shadow-xl animate-scale-in transition-all duration-300">
+            <FaHeart className="text-gray-300 dark:text-gray-600 text-6xl mx-auto mb-4 animate-pulse transition-all duration-300" />
+            <p className="text-gray-600 dark:text-gray-300 text-xl mb-4 transition-colors duration-300">No favorites yet!</p>
+            <p className="text-gray-500 dark:text-gray-400 mb-6 transition-colors duration-300">
               Start adding products to your favorites by clicking the heart icon on product cards.
             </p>
             <Link
               to="/products"
-              className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300"
+              className="inline-block bg-gradient-to-r from-green-600 to-green-500 text-white px-6 py-3 rounded-xl hover:scale-105 hover:shadow-xl transition-all duration-300"
             >
               Browse Products
             </Link>
